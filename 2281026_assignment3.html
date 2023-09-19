@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning HTML Forms</title>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+    <form action="process.php" method="GET"> <!--kalo pake GET, variabelnya ga muncul di URL, kalo pake POST muncul.-->
+        <fieldset>
+        <legend>Personal Data</legend> <!-- legend ini buat kotak gede gtu, yg di output.-->
+        <!-- Input type text-->
+        <label for="fname">First name: </label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <br><!-- Input typu password-->
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password">
+
+        <br><br>
+        <!-- Select element-->
+        <label for="religion">Choose your religion: </label><br>
+        <select id="religion" name="religion" multiple>
+            <option value="Christian">Christian</option>
+            <option value="Moslim">Moslim</option>
+            <option value="Budhist">Budhist</option>
+            <option value="Hindu">Hindu</option>
+        </select><br><br>
+        
+        <!-- Input Type Color-->
+        <label for="favoritecolor">Choose Your Favorite Color: </label><br>
+        <input type="color" id="favoritecolor" name="favoritecolor">
+        <br>
+
+        <!-- Input Type Date-->
+        <br>
+        <input type="date"> <!-- Kalo mau buat tanggal-->
+        <br>
+
+        <!-- Input Type Datetime-local-->
+        <br>
+        <label for="birthdaytime">Birthday (date and time):</label><br>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <br>
+
+        <!-- Input Type Email-->
+        <br>
+        <label for="email">Enter Your Email: </label><br>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <!-- Input Type Image-->
+        <br>
+        <input type="image" src="image/dog.jpg" alt="submit" width="150" height="150">
+        <br>
+
+        <!-- Input Type File-->
+        <br>
+        <label for="myfile">Select a file: </label><br>
+        <input type="file" id="myfile" name="myfile">
+        <br>
+
+        <!-- Input Type Hidden-->
+        <br>
+        <label for="fname">First Name: </label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <input type="hidden" id="custID" name="custID" value="1912">
+        <input type="submit" value="Submit">
+        <br>
+
+        <!-- Input Type Month-->
+        <br>
+        <label for="bdmonth">Birthday (month and year) : </label><br>
+        <input type="month" id="bdmonth" name="bdmonth">
+        <br>
+
+        <!-- Input Type Number-->
+        <br>
+        <label for="quantity">Quantity (Between 0 and 9999) : </label><br>
+        <input type="number" id="quantity" name="quantity" min="0" max="9999">
+        <br>
+
+        <!-- Input Restrictions-->
+        <br>
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="0" max="8888" step="88" value="400">
+        <br>
+
+        <!-- Input Type Range-->
+        <br>
+        <label for="vol">Volume (Between 0 and 200) </label><br>
+        <input type="range" id="vol" name="vol" min="0" max="200">
+        <br>
+
+        <!-- Input Type Search-->
+        <br>
+        <label for="gsearch">Search Google: </label><br>
+        <input type="search" id="gsearch" name="gsearch">
+        <br>
+
+        <!-- Input Type Tel-->
+        <br>
+        <label for="phone">Enter Your Phone Number: </label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{4}-0-9{4}">
+        <br>
+
+        <!-- Input Type Time-->
+        <br>
+        <input type="time" required> <!-- Kalo mau buat waktu-->
+        <br>
+
+        <!-- Input Type URL -->
+        <br>
+        <label for="homepage">Add Your homepage: </label><br>
+        <input type="url" id="homepage" name="homepage">
+        <br>
+
+        <!-- Input Type Week-->
+        <br>
+        <label for="week">Select a Week: </label><br>
+        <input type="week" id="week" name="week">
+        <br>
+
+        <br><br>
+        <!-- Textarea element-->
+        <label for="comment">Write your comment below: </label><br>
+        <textarea id="comment" name="comment" rows="10" cols="30"></textarea>
+
+        <br><!-- Input type radio-->
+        <p>Choose yout gender: </p>
+        <input type="radio" id="male" name="gender" value="Male"> 
+        <label for="male">Male</label>
+        <input type="radio" id="famale" name="gender" value="Famale">
+        <label for="famale">Famale</label><br>
+
+
+        <!-- Input type checkbox-->
+        <p>Choose your hobbies: </p>
+        <input type="checkbox" id="hobby1" value="Badminton">
+        <label for="hobby1">Badminton</label><br>
+        <input type="checkbox" id="hobby2" value="Futsal">
+        <label for="hobby2">Futsal</label><br>
+        <input type="checkbox" id="hobby3" value="Football">
+        <label for="hobby3">Football</label><br>
+        <input type="checkbox" id="hobby4" value="Basketball">
+        <label for="hobby4">Basketball</label><br>
+
+        <br><input type="submit">
+
+        <!-- Intput type reset-->
+        <input type="reset"> <!-- kalo klik reset, nantu smua yg udah di isi jadi kosong atau terulang-->
+    </fieldset>
+    </form>
+</body>
+</html>
