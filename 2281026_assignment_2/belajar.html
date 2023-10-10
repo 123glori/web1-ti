@@ -16,7 +16,18 @@
             th, td {
                 color: red;
             }
-
+        </style>
+        <style>
+            .table2 {
+                border-radius: 10px;
+                background-color: lightblue;
+                margin: 0%;
+                border: 0;
+                border-color: violet;
+            }
+            .table2 th, .table2 td {
+                color: black;
+            }
         </style>
     </head>
     <body>
@@ -62,5 +73,44 @@
     <li>Green</li>
     <li>Chimpa</li>
     <li>Debi</li>
+
+    <table class="table2" border="3">
+        <tr>
+            <th>Nama</th>
+            <th>Makanan</th>
+            <th>Minuman</th>
+        </tr>
+        <tr>
+            <td>glori</td>
+            <td>Oreo</td>
+            <td>sprite</td>
+        </tr>
+        <tr>
+        <td>ka chimpa</td>
+        <td>roti</td>
+        <td>pocari</td>
+        </tr>
+        <tr>
+            <td rowspan="2">ka debi</td>
+            <td>nabati</td>
+            <td rowspan="3">goodday</td>
+        </tr>
+        <tr>
+            <td>nextar</td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td rowspan="2">goodtime</td>
+            
+        </tr>
+        <tr>
+            <td>ka chimpa</td>
+            <td>air putih</td>
+        </tr>
+        <tr>
+            <td>glori</td>
+            <td colspan="2">kue sus</td>
+        </tr>
+    </table>
     </body>
 </html>
