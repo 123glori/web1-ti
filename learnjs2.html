@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JS part 2</title>
+</head>
+<body>
+    <h1>Learn JS part 2</h1>
+
+    <button onclick="myGlori">Click me!</button>
+
+    <script>
+        const pi = 3.14;
+        let x = 1;
+
+        x = 2;
+        // pi = 3;
+        console.log(x);
+        console.log(pi);
+
+        function myGlori() {
+            alert ("My name is Glori");
+            newFunction();
+        }
+
+        function newFunction() {
+            alert("I love JS1");
+        }
+
+        x = 3;
+        let y = 4;
+        let z = 2;
+
+        function add(x, y, z) {
+            return x + y + z;
+        }
+
+        function substract(a, b) {
+            return a - b;
+        }
+
+        document.write(add(x, y, z));
+        document.write(substract(y, z));
+
+    </script>
+</body>
+</html>
